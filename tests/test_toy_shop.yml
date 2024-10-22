@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: products
+    columns:
+      - name: PRODUCT_ID
+        tests:
+          - unique
+          - not_null
+  - name: stores
+    columns:
+      - name: store_id
+        tests:
+          - unique
+          - not_null

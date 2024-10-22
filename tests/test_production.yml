@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: inventory
+    columns:
+      - name: store_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_stores')
+              field: store_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_product')
+              field: product_id
+  - name: sales
+    columns:
+      - name: sale_id
+        tests:
+          - unique
+          - not_null
+      - name: store_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_stores')
+              field: store_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_product')
+              field: product_id            

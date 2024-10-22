@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: toy_shop
+    database: raw_toy_data
+    schema: production
+    tables:
+      - name: inventory
+        description: "A table containing all the details about product inventory"
+      - name: sales
+        description: "A table containing details about product sales"
+      - name: calendar
+        description: "A table containing calendor dates"

@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: toy_shop
+    database: raw_toy_data
+    schema: toy_shop
+    tables:
+      - name: products
+        description: "A table containing product information"
+      - name: stores
+        description: "A table containing stores information"
