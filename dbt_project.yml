@@ -39,3 +39,7 @@ models:
   toy_shop:
     staging:
       +materialized: table
+    curated:
+      +materialized: view
+    consumption:
+      +materialized: table
