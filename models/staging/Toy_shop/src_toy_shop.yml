@@ -9,3 +9,4 @@ sources:
         description: "A table containing product information"
       - name: stores
         description: "A table containing stores information"
+

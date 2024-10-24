@@ -1,3 +1,7 @@
+{{ 
+    config( materialized='ephemeral' ) 
+}}
+
 with 
 store as 
     (select * from {{ ref('stg_stores') }} ),
